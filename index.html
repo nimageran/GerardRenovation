@@ -294,15 +294,43 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Contact</h2>
                     <ul class="fa-ul mb-0">
-			  <li>
-			    <span class="fa-li"><i class="fas fa-envelope"></i></span>
-			    <p><a href="mailto:nimageran@gmail.com">nimageran@gmail.com</a></p>
-			  </li>
-			  <li>
-			    <span class="fa-li"><i class="fas fa-phone"></i></span>
-			    <p>(647) 503‑9844</p>
-			  </li>
-			</ul>
+			<form id="contactForm"
+			      action="mailto:your‑team@example.com"
+			      method="post"
+			      enctype="text/plain"
+			      novalidate>
+			  <div class="form-group mb-3">
+			    <label for="name">Name</label>
+			    <input type="text"
+			           id="name"
+			           name="name"
+			           class="form-control"
+			           placeholder="Your name"
+			           required>
+			  </div>
+			  <div class="form-group mb-3">
+			    <label for="email">Email</label>
+			    <input type="email"
+			           id="email"
+			           name="email"
+			           class="form-control"
+			           placeholder="Your email"
+			           required>
+			  </div>
+			  <div class="form-group mb-3">
+			    <label for="message">Message</label>
+			    <textarea id="message"
+			              name="message"
+			              class="form-control"
+			              rows="5"
+			              placeholder="Your message"
+			              required></textarea>
+			  </div>
+			  <button type="submit" class="btn btn-primary">
+			    Send Message
+			  </button>
+			</form>
+
 
                 </div>
             </section>
